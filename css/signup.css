@@ -1,0 +1,188 @@
+html,body
+{
+  height: 100%;
+  width: 100%;
+  padding : 0;
+  margin: 0;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../images/restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.signupbox
+{
+  width: 33%;
+  height: 74%;
+  margin: auto;
+  text-align: center;
+  background: #35424a;
+  color: white;
+}
+
+.signup_container
+{
+  margin: auto;
+}
+
+.signup_container h1
+{
+  font-size: 50px;
+}
+
+.signup_container
+input[type="email"], input[type="password"],
+input[type="tel"], input[type="text"]
+{
+  width: 48%;
+  margin-top: 23px;
+  height: 34px;
+  background-color: #f2f2f2;
+  padding-left: 10px;
+  border: none;
+}
+
+.signup_container input[type="radio"]
+{
+  margin-top: 20px;
+}
+
+.signup_container button
+{
+  width: 49.6%;
+  margin-top: 23px;
+  background-color: #39ac39;
+  border: none;
+  height: 34px;
+  color: white;
+  font-size: 23px;
+}
+
+#bottom
+{
+  margin-top: 15px;
+  font-size: 15px;
+  color: #bfbfbf;
+}
+
+#bottom a{
+  text-decoration: none;
+  color: #66b3ff;
+}
+
+.invalid
+{
+  outline: 2px groove #ff6666;
+}
+
+.invalid::placeholder{
+  color: red;
+}
+.invalid::-ms-input-placeholder{
+  color: red;
+}
+.invalid:-ms-input-placeholder{
+  color: red;
+}
+
+.alert
+{
+  margin: auto;
+  width: 60%;
+  height: 30px;
+  padding-left: 15px;
+  padding-top: 10px;
+  background: #99ffcc;
+  color:green;
+  border: 2px solid green;
+  border-radius: 4px;
+  -moz-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 2s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 2s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.out_alert
+{
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+        border: none;
+        background:black;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+        border: none;
+        background:black;
+    }
+}
+
+@media only screen and (max-width: 1200px)
+{
+  .signup_container
+  input[type="email"], input[type="password"],
+  input[type="tel"], input[type="text"]
+  {
+    width: 70%;
+  }
+  .signup_container button
+  {
+    width: 71.6%
+  }
+  .signupbox
+  {
+    width: 44%;
+  }
+  .alert
+  {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .signup_container
+  input[type="email"], input[type="password"],
+  input[type="tel"], input[type="text"]
+  {
+    width: 90%;
+  }
+  .signup_container button
+  {
+    width: 91.6%
+  }
+  .signupbox
+  {
+    width: 100%;
+    height: 48%;
+  }
+  body
+  {
+    display: initial;
+    background-image: none;
+    background: #35424a;
+  }
+  .alert
+  {
+    width: 100%;
+  }
+  .signupbox
+  {
+    margin-top: 50px;
+  }
+}
