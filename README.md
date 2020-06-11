@@ -9,4 +9,9 @@ in this project a user an place an order add to cart and restaurant can add item
 3. now copy foodshala folder that is present in database folder and paste it into xampp\mysql\data (on wamp wamp\bin\mysql\mysql5.6.17\data)<br>
 4. now start apache and mysql from your xampp control panel<br>
 all set!!<br>
-5. now lauch the project using the link http://localhost/foodshala/index.php/auth/login
+5. now lauch the project using the link http://localhost/foodshala/index.php/auth/menu
+
+
+
+To see the project live please visit 
+https://project-foodshala.herokuapp.com/index.php/auth/menu
